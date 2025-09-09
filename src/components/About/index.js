@@ -16,9 +16,11 @@ const About = () => {
   const [letterClass, setLetterClass] = useState('text-animate')
 
   useEffect(() => {
-    return setTimeout(() => {
+    const timer = setTimeout(() => {
       setLetterClass('text-animate-hover')
     }, 3000)
+    
+    return () => clearTimeout(timer);
   }, [])
 
   return (
@@ -32,19 +34,15 @@ const About = () => {
               idx={15}
             />
           </h1>
-          <p>Creative React Developer with 5 years of experience developing intuitive, responsive user interfaces and improving user experience in modern web
-applications. Proficient in the React ecosystem (React.js, Next.js, Redux,TypeScript) and component-based architecture, with hands-on expertise in
-industry-standard tools and workflows. Skilled at turning complex requirements into clean, accessible, and scalable front-end solutions. Wellversed in Facebook’s front-end best practices and certified through Meta’s Front-End Developer Professional Certificate. Authorized to work in the
-U.S. without sponsorship</p>
-          {/* <p align="LEFT">
-            Skilled in React.js, React Hooks, Redux, Javascript, CSS, HTML,
-            Typescript, Jest, Scss, Bootstrap, Python, data science
-            fundamentals, c programming .
+          <p>
+            A seasoned software developer with over 10 years of professional experience in all phases of the software development lifecycle, including requirements analysis, development, maintenance, and implementation of web applications. I have a strong knowledge of SDLC methodologies like Agile-SCRUM and Waterfall. I am a result-oriented and self-driven individual, always keen on learning new technologies and undertaking challenging tasks to create business value.
           </p>
           <p>
-            Strong programming skills with a Bachelor of Technology - BTech
-            focused in Computer Science. 2020 graduate with CGPA of 7.5
-          </p> */}
+            I am skillful in designing and developing applications using a wide range of web technologies, including Java, J2EE, Spring Boot, Node.js, and React.js. My expertise extends to building microservices architecture applications and creating interactive UIs using React.js concepts like one-way data flow, Virtual DOM, and JSX. I also have extensive experience with cloud platforms, particularly working with Amazon Web Services (AWS) like EC2, S3, and RDS.
+          </p>
+          <p>
+            I possess excellent technical, analytical, and problem-solving skills with strict attention to detail. I have a proven ability to write clear, well-documented, and efficient code and can work effectively both independently and as a collaborative member of a team. My strong communication and planning skills ensure smooth project execution and successful outcomes.
+          </p>
         </div>
 
         <div className="stage-cube-cont">

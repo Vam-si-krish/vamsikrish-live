@@ -140,7 +140,7 @@
 //         className="solid-logo"
 //         ref={solidLogoRef}
 //         src={LogoS}
-//         alt="Vamsi Krishna Chiguruwada"
+//         alt="Vamsi Krishna"
 //       />
 //       <svg
 //         version="1.0"

@@ -119,72 +119,165 @@ const Portfolio = () => {
           <div className="experience-container">
             {/* --- Experience Item 1 --- */}
             <div className="experience-item">
-              <h3 className="job-title">UI Specialist</h3>
+              <h3 className="job-title">Sr Full Stack React Developer</h3>
               <h4 className="company-details">
-                Yash Technologies | Aug 2022 - Aug 2024
+                Client: Delta Airlines | Dec 2023 - Present | Atlanta, GA
               </h4>
               <ul>
                 <li>
-                  Developed responsive SPAs using React.js, Next.js, & Tailwind CSS, consuming RESTful APIs and collaborating with backend (Node.js/Express) teams.
+                  Engaged in the complete Agile/SDLC lifecycle, including requirement analysis, development, and testing.
                 </li>
                 <li>
-                  Wrote comprehensive unit tests for React components using Jest following TDD practices, improving service reliability and achieving a 15% increase in code coverage.
+                  Developed single-page applications (SPAs) using React with Hooks and Redux for state management, and React Router for routing.
+                </li>
+                <li>
+                  Implemented a microservices architecture using Spring Boot, creating smaller, independent, and RESTful API-based services.
                 </li>
                  <li>
-                  Led the integration of advanced data visualization components, architecting and building reusable frontend component libraries to enhance user engagement.
-                </li>
-                 <li>
-                  Enhanced application accessibility by implementing WCAG standards and ensured robust cross-browser compatibility, resulting in a 30% increase in usability.
+                  Utilized Docker and Kubernetes for containerization and orchestration to build, test, and deploy in a CI/CD environment with Jenkins.
                 </li>
                 <li>
-                  Engineered and implemented sophisticated state management solutions (e.g., Redux, Context API) for complex SPAs, significantly improving data flow consistency.
+                  Worked on AWS services, including EC2 servers and S3 storage, to deploy functional prototypes.
                 </li>
                 <li>
-                  Drove client-side performance improvements via code splitting and lazy loading, significantly cutting initial load times and enhancing application responsiveness.
+                  Wrote end-to-end tests with Cypress and performed unit testing with JUnit and Mockito. Tracked bugs and issues using JIRA.
                 </li>
               </ul>
             </div>
 
             {/* --- Experience Item 2 --- */}
             <div className="experience-item">
-              <h3 className="job-title">UI Developer</h3>
+              <h3 className="job-title">Sr Full Stack React Developer</h3>
               <h4 className="company-details">
-                Msys Technologies | Feb 2021 - Aug 2022
+                Client: TIAA | Apr 2023 - Nov 2023 | Charlotte, NC
               </h4>
               <ul>
                 <li>
-                  Engineered 15+ reusable, responsive UI components using React.js and TypeScript, implementing robust state management with Redux which slashed code duplication by 25%.
+                  Designed and developed user interactive (UI) web pages using HTML, CSS, JavaScript, and React.js.
                 </li>
                 <li>
-                  Played a pivotal role in a 12-member cross-functional Agile/Scrum team, utilizing tools like JIRA for effective task tracking and contributing to on-time delivery of major feature releases.
+                  Built SPAs using React.js components, JSX, events, and Flux architecture for state management.
                 </li>
                  <li>
-                  Partnered strategically with Node.js backend developers to co-design API contracts and integrate RESTful APIs, ensuring optimal data flow.
+                  Used React Router for client-side routing and implemented Drag and Drop functionality using React-Draggable.
                 </li>
                  <li>
-                  Actively drove software quality by contributing to sprint planning, conducting rigorous code reviews, and leveraging CI/CD pipelines (Webpack, Git).
+                  Wrote services to store and retrieve user data from MongoDB.
                 </li>
                 <li>
-                  Translated complex UI/UX design specifications and Figma mockups into pixel-perfect, interactive React.js applications.
+                  Ensured the application was responsive using Bootstrap and media queries, checking for cross-browser compatibility.
+                </li>
+                <li>
+                  Participated in daily SCRUM meetings and used Git for version control.
                 </li>
               </ul>
             </div>
 
             {/* --- Experience Item 3 --- */}
             <div className="experience-item">
-              <h3 className="job-title">UI Developer Intern</h3>
+              <h3 className="job-title">Sr React Developer</h3>
               <h4 className="company-details">
-                Msys Technologies | Feb 2020 - Jan 2021
+                Client: AT&T | Feb 2021 - Mar 2023 | Dallas, TX
               </h4>
               <ul>
                 <li>
-                  Developed and optimized frontend components for performance, achieving a 15% improvement in average page load speed and successfully integrating APIs.
+                  Designed, developed, and tested HTML5, CSS3, Bootstrap, JavaScript, and React.js applications.
                 </li>
                 <li>
-                  Collaborated with UX/UI teams, translating over 10+ Figma designs into responsive and dynamic web interfaces using React.js and TypeScript.
+                  Developed a single isomorphic responsive website using React.js that could be served to desktop, tablets, and mobile users.
                 </li>
                 <li>
-                  Assisted senior developers in unit testing for React components, gaining hands-on experience in modern frontend development and testing practices.
+                  Managed application state using Redux, including middleware and reducers to modify the store state tree.
+                </li>
+                 <li>
+                  Used Spring Boot to build cloud microservices and consumed RESTful web services for data transmission.
+                </li>
+                <li>
+                  Integrated with AWS services like Lambda, S3, and EC2 to fetch data for the UI.
+                </li>
+                 <li>
+                  Used JIRA for bug tracking and Git for version control. Wrote unit tests using Jasmine.
+                </li>
+              </ul>
+            </div>
+
+             {/* --- Experience Item 4 --- */}
+            <div className="experience-item">
+              <h3 className="job-title">React JS Developer/ React Native</h3>
+              <h4 className="company-details">
+                Client: Johnson & Johnson | Apr 2018 - Jan 2021 | DesMoines, IA
+              </h4>
+              <ul>
+                <li>
+                  Designed and developed web pages using HTML5, CSS3, JavaScript, Material UI, React.js, and Redux.
+                </li>
+                <li>
+                  Worked extensively with React.js Virtual DOM and developed reusable components.
+                </li>
+                <li>
+                  Integrated, configured, and managed AWS services including Oracle RDS, Lambda, SQS, and CloudWatch.
+                </li>
+                 <li>
+                  Developed the server-side application using Spring Boot and Hibernate.
+                </li>
+                <li>
+                  Built the client-side application integrating with REST APIs.
+                </li>
+              </ul>
+            </div>
+            
+            {/* --- Experience Item 5 --- */}
+            <div className="experience-item">
+              <h3 className="job-title">React Developer</h3>
+              <h4 className="company-details">
+                Client: Oracle | Jan 2016 - Nov 2017 | Bangalore, India
+              </h4>
+              <ul>
+                <li>
+                  Developed a new mobile application for both Android and iOS using React Native.
+                </li>
+                <li>
+                  Built reusable components and front-end libraries for future use.
+                </li>
+                <li>
+                  Designed and developed mobile components such as tab bars, map views, image pickers, and push notifications.
+                </li>
+                 <li>
+                  Worked in an Agile Development Team to deliver regular updates.
+                </li>
+                <li>
+                  Consumed RESTful APIs using Axios to send and receive JSON formatted data.
+                </li>
+                <li>
+                  Used Git for version control and JIRA for bug tracking.
+                </li>
+              </ul>
+            </div>
+            
+            {/* --- Experience Item 6 --- */}
+            <div className="experience-item">
+              <h3 className="job-title">Developer</h3>
+              <h4 className="company-details">
+                Client: Xicom Technologies | Sep 2014 - Dec 2016 | India
+              </h4>
+              <ul>
+                <li>
+                  Designed, developed, and tested web applications using HTML5, CSS3, Bootstrap, React.js, and Redux.
+                </li>
+                <li>
+                  Developed a single isomorphic responsive website that could be served to desktop, tablets, and mobile users using React.js.
+                </li>
+                <li>
+                  Created a mobile application for both iOS & Android using the React Native framework.
+                </li>
+                 <li>
+                  Maintained application state in stores and dispatched actions using Redux.
+                </li>
+                <li>
+                  Worked with Spring Boot and consumed RESTful web services.
+                </li>
+                <li>
+                  Used Git for version control and HP Quality Center for bug tracking.
                 </li>
               </ul>
             </div>

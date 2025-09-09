@@ -23,7 +23,7 @@ const Contact = () => {
     setSubmissionStatus(null);
 
     const formData = new FormData(e.target);
-    const ajaxEndpoint = 'https://formsubmit.co/ajax/vamsichiguruwada@gmail.com';
+    const ajaxEndpoint = 'https://formsubmit.co/ajax/vamsikrish1200@gmail.com';
 
     try {
       const response = await fetch(ajaxEndpoint, {
@@ -89,7 +89,7 @@ const Contact = () => {
               <form
                 ref={form}
                 onSubmit={handleSubmit}
-                action="https://formsubmit.co/vamsichiguruwada@gmail.com"
+                action="https://formsubmit.co/vamsikrish1200@gmail.com"
                 method="POST"
               >
                 <ul>
@@ -135,13 +135,13 @@ const Contact = () => {
           </div>
         </div>
         <div className="info-map">
-          Vamsi Krishna Chiguruwada
+          Vamsi Krishna
           <br />
           
           Boston, MA 02145 <br />
           United States <br />
           <br />
-          <span>vamsi@vamsikrish.com</span>
+          <span>vamsikrish1200@gmail.com</span>
         </div>
         <div className="map-wrap">
           <MapContainer center={[42.387959, -71.103088]} zoom={14}>

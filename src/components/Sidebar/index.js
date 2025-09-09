@@ -91,7 +91,7 @@ const Sidebar = () => {
       <ul>
         <li>
           <a
-            href="https://www.linkedin.com/in/vamsi-krish-chiguruwada-532092183/"
+            href="https://www.linkedin.com/in/vam-si-krish-532092183/"
             target="_blank"
             rel="noreferrer"
           >
@@ -104,7 +104,7 @@ const Sidebar = () => {
         </li>
         <li>
           <a
-            href="https://github.com/vamsi-krish-chiguruwada"
+            href="https://github.com/vam-si-krish"
             target="_blank"
             rel="noreferrer"
           >
@@ -128,7 +128,7 @@ const Sidebar = () => {
             />
           </a>
         </li>
-        <li>
+        {/* <li>
           <a
             href="https://stackoverflow.com/users/14326771/vamsi-chiguruwada"
             rel="noreferrer"
@@ -140,7 +140,7 @@ const Sidebar = () => {
               className="anchor-icon"
             />
           </a>
-        </li>
+        </li> */}
       </ul>
       <FontAwesomeIcon
         onClick={() => setShowNav(true)}
