@@ -1,0 +1,205 @@
+/* --- Polished Vertical Timeline Layout --- */
+
+.portfolio-page {
+  position: absolute;
+  left: 0;
+  top: 0vh;
+  width: 100% !important;
+  height: 100%;
+  box-sizing: border-box;
+  overflow-y: auto; // Enable vertical scrolling
+
+  // The text-zone now manages the padding for the whole page content
+  .text-zone {
+    position: relative;
+    width: 90% !important;
+    box-sizing: border-box;
+    // Add padding to account for the sidebar (100px) + content spacing (40px)
+    padding: 43px 35px 40px 20px;
+  }
+}
+
+.experience-container {
+  position: relative;
+  // Set a comfortable max-width and center the container
+  max-width: 1200px;
+  width: 100%;
+  margin: 50px auto;
+  padding: 40px 0px;
+  // The central timeline bar with a gradient effect
+  &::before {
+    content: '';
+    position: absolute;
+    top: 10px;
+    bottom: 10px;
+    left: 50%;
+    transform: translateX(-50%);
+    width: 3px;
+    background: linear-gradient(to bottom, #ffd700, #022c43 80%);
+  }
+}
+
+.experience-item {
+  padding: 30px 40px;
+  position: relative;
+  // "Glassmorphism" effect: semi-transparent background with a blur
+  background: rgba(27, 27, 27, 0.6);
+  backdrop-filter: blur(10px);
+  -webkit-backdrop-filter: blur(10px); // For Safari
+  border-radius: 12px;
+  width: calc(50% - 50px);
+  margin-bottom: 50px;
+  box-sizing: border-box;
+  border: 1px solid #282828;
+  transition: transform 0.4s ease, box-shadow 0.4s ease;
+
+  &:hover {
+    transform: translateY(-8px);
+    box-shadow: 0 12px 35px rgba(0, 0, 0, 0.4);
+  }
+
+  // The Icon Marker - uses FontAwesome for a professional look
+  &::before {
+    font-family: 'Font Awesome 6 Free';
+    content: '\f0b1'; // Unicode for the "briefcase" icon
+    font-weight: 900; // Required for solid icons
+    position: absolute;
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    background-color: #022c43; // Dark blue background
+    color: #ffd700; // Gold icon color
+    border: 3px solid #ffd700;
+    top: 25px;
+    z-index: 1;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 1.2rem;
+  }
+
+  // The connecting arrow
+  &::after {
+    content: '';
+    position: absolute;
+    top: 40px;
+    width: 0;
+    height: 0;
+    border-style: solid;
+  }
+
+  .job-title {
+    color: #ffd700;
+    font-size: 1.7rem;
+    font-weight: 700;
+  }
+
+  .company-details {
+    // color: #c5c5c5;
+    color: #ffffff;
+    font-size: small;
+    margin: 5px 0 20px 0;
+    // font-size: 1rem;
+    font-style: italic;
+  }
+
+  ul li {
+    position: relative;
+    // color: #dfdfdf;
+    color: #ffffff;
+    font-size: small;
+    font-weight: normal;
+
+    margin-bottom: 10px;
+    line-height: 1.6;
+    list-style-type: none;
+    padding-left: 20px;
+    &::before {
+      content: '▹';
+      position: absolute;
+      left: 0;
+      top: 0;
+      color: #ffd700;
+    }
+  }
+}
+
+// Positioning for LEFT & RIGHT items
+.experience-item:nth-child(odd) {
+  left: 0;
+  // text-align: right;
+  &::before {
+    right: -75px;
+  }
+  &::after {
+    right: -15px;
+    border-width: 10px 0 10px 15px;
+    border-color: transparent transparent transparent #282828;
+  }
+  ul li {
+    padding-left: 0;
+    padding-right: 20px;
+    &::before {
+      left: auto;
+      right: 0;
+      content: '◃';
+    }
+  }
+}
+
+.experience-item:nth-child(even) {
+  left: calc(50% + 50px);
+  &::before {
+    left: -75px;
+  }
+  &::after {
+    left: -15px;
+    border-width: 10px 15px 10px 0;
+    border-color: transparent #282828 transparent transparent;
+  }
+}
+
+// Responsive Fallback: stacks everything in a single column
+@media screen and (max-width: 992px) {
+  .portfolio-page .text-zone {
+    padding: 20px;
+  }
+  .experience-item,
+  .experience-item:nth-child(even),
+  .experience-item:nth-child(odd) {
+    width: 100%;
+    left: 0;
+    padding-left: 30px;
+    padding-right: 30px;
+    text-align: left;
+    margin-bottom: 70px;
+  }
+  .experience-item::before {
+    top: -35px;
+    left: 50%;
+    transform: translateX(-50%);
+  }
+  .experience-item::after {
+    display: none;
+  }
+  .experience-item ul li {
+    padding-left: 20px;
+    padding-right: 0;
+    &::before {
+      left: 0;
+      right: auto;
+      content: '▹';
+    }
+  }
+}
+
+
+@media (max-width: 1200px) {
+  .portfolio-page {
+    top: 10vh;
+    height: 90vh;
+    .text-zone{
+      width: 100% !important;
+    }
+  }
+}

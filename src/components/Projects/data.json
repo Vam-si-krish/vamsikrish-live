@@ -1,0 +1,20 @@
+[
+  {
+    "id": 1,
+    "title": "Flatmate Expense Splitter",
+    "image": "/images/project-splitwise.png",
+    "description": "A web app where flatmates can log in, manage shared expenses, add equal or unequal splits, record payments, and see a log of all house activity. Built with React and Firebase.",
+    "tags": ["React", "Firebase", "Firestore", "Tailwind CSS"],
+    "liveUrl": "https://split.vamsikrish.com/",
+    "githubUrl": "https://github.com/vamsi-krish-chiguruwada/splitwise"
+  },
+  {
+    "id": 2,
+    "title": "Portfolio Website v1",
+    "image": "/images/portfolio-v2.png",
+    "description": "My first personal portfolio website, built with React. It features an interactive UI with particle effects, a projects section, and an integrated resume viewer.",
+    "tags": ["React", "Bootstrap", "React-Particles"],
+    "liveUrl": "https://v1.vamsikrish.com/",
+    "githubUrl": "https://github.com/vamsi-krish-chiguruwada/personal-portfolio-v3"
+  }
+  ]
